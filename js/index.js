@@ -13,10 +13,10 @@ const getUsersList = async() => {
     element.age >= 18 && element.age <= 35);
 
     const usersListTwo = usersList.filter((element) => 
-    element.age.value >= 36 && element.age.value <= 64);
+    element.age >= 36 && element.age <= 64);
 
     const usersListThree = usersList.filter((element) => 
-    element.age.value > 64 );
+    element.age > 64 );
 
    /* usersRanges =*/ {usersListOne, usersListTwo, usersListThree}
     return usersRanges;
