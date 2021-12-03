@@ -521,3 +521,351 @@ background-image: url("https://media.istockphoto.com/photos/happy-millennial-wom
   height: 60px;
   background:rgb(29, 98, 131);
 }
+
+
+
+@media screen and (max-width: 768px) {
+  
+  h1{
+    text-align: center;
+    font-size: 20px;
+    color: rgb(40, 40, 49);
+    background: white;
+    padding: 1%;
+  }
+
+  .header_flex{
+    width: 100%;
+    height: 60px;
+    padding-left: 5px;
+    padding-right: 5px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap:nowrap;
+    justify-content: space-between;
+    flex-direction: row;
+    background: rgb(29, 98, 131);
+  }
+
+  .header_logo {
+    width: 50px;
+    height: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: normal;
+    align-items: center;
+
+    
+  }
+
+  .header_dx{
+    width: 300px;
+    height: auto;
+    display: flex;
+  
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+
+  .header_menu{
+    width: 250px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:flex-end;
+    
+  }
+
+  .header_menu ul{
+    list-style: none;
+    margin-bottom: 3px;
+    margin-right: 2px;
+    margin-left: 5px;
+    padding-left: 0;
+   
+  }
+  
+  .header_menu ul li  {
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 8px;
+    color: white;
+  }
+  .header_menu ul li a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .header_search{
+    width: 150px;
+    height: auto;
+    margin-bottom: 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:flex-end;
+  }
+  
+  .input_search{
+    width: 100px;
+    height: 15px;
+    border-radius: 1px;
+    border: none;
+    margin-bottom: 4px;
+  }
+  .button_search{
+    width: 28px;
+    height: 20px;
+    border-radius: 1px;
+    border: none;
+    margin: 4px;
+    cursor: pointer;
+   
+  }
+
+  .flex_wrapper{
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;  
+    justify-content: center;
+    align-items: center;
+   
+    background-color: rgb(29, 98, 131);
+  }
+  
+  .flex__wrapper{
+   
+     width: 100%;
+     height: auto;
+     
+      box-sizing: border-box;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+  
+  .box_item{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 20%;
+    
+    margin: 5px;
+    padding: 5px;
+  }
+  
+  .box_item h3{
+    font: 10px bold;
+    color: white;
+  }
+  
+  .__wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+  
+    width: 100%;
+    height: 220px;
+    overflow-x:scroll;
+    padding-top: 5px;
+    border: 2px solid white;
+    border-radius: 5px;
+   /* background: rgba(255, 255, 255, 0.534); */
+    opacity: 0.78;
+    cursor: pointer;
+    transition: all 0.35s;
+  }
+  .flex_item_one{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    
+  
+    width: 100%;
+    height: 200px;
+    overflow-x:scroll;
+    padding-top: 5px;
+    
+    border-radius: 5px;
+   
+    
+    cursor: pointer;
+    transition: all 0.35s;
+  }
+  
+  .flex_item_two{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    
+  
+    width: 100%;
+    height: 220px;
+    overflow-x:scroll;
+    padding-top: 5px;
+    
+    border-radius: 5px;
+   
+    
+    cursor: pointer;
+    transition: all 0.35s;
+  }
+  
+  .flex_item_three{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    
+  
+    width: 100%;
+    height: 220px;
+    overflow-x:scroll;
+    padding-top: 5px;
+    
+    border-radius: 5px;
+   
+    
+    cursor: pointer;
+    transition: all 0.35s;
+  }
+  .user_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 4px;
+    padding: 5px;
+  
+    width: 70%;
+    height: 33px;
+    background: white;
+    border: 1px solid rgb(29, 98, 131);
+    border-radius: 6px;
+  
+   
+    cursor: pointer;
+    transition: all 0.35s;
+  }
+  .user_div h4{
+    font-size: 8px;
+    margin: 1px auto;
+  }
+  .user_div p{
+    font-size: 5px;
+    margin: 1px auto 0;
+  }
+  .user_div SPAN{
+    font-size: 8px;
+    margin: 1px auto 0;
+  }
+
+  .img_contents_wrapper{
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    width: 100%;
+    height: auto;
+    margin: 15px 5px;
+  
+    
+  }
+
+  .slider_img{
+    width: 80%;
+    height: 400px;
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    background-image: url("https://media.istockphoto.com/photos/happy-millennial-woman-reading-paper-correspondence-letter-picture-id1290230615");
+    
+    }
+
+    .wrapper_contents{
+      width: 80%;
+      display: flex;
+      flex-direction:row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      justify-items: center;
+    }
+    ._wrapper_contents{
+      width: 30%;
+      height: 100px;
+      
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      justify-items: center;
+      background: rgb(250, 203, 128);
+      
+      margin: 15px 10px;
+      padding: 5px;
+      text-align: center;
+      border-radius: 6px;
+      box-shadow: 4px 3px var(--main_color);
+    } 
+    ._wrapper_contents h4{
+      margin: 4px 0;
+      font-size: 9px;
+    
+    }
+    ._wrapper_contents p{
+      margin: 4px;
+      font-size: 7px;
+      color: white;
+    
+    }
+    .button_leggi{
+      background: rgb(29, 98, 131);
+      width: 50%;
+      height: 12 px;
+      border:none;
+      border-radius: 2px;
+      margin: 0 auto;
+      cursor: pointer;
+    }
+    .second_wrapper{
+      width: 100%;
+      height: auto;
+      background: white;
+      box-sizing: border-box;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      padding-bottom: 50px;
+    
+    }
+    .article_wrapper{
+      box-sizing: border-box;
+      display: flex;
+      flex-wrap:nowrap;
+      flex-direction: row;
+      justify-content: space-evenly;
+      width: 90%;
+      height: auto;
+    }
+
+
+
+
+}
