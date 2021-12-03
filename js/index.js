@@ -105,31 +105,10 @@ function createAge(parent, ageUser){
                 wrapperUsersThree.innerHTML = "Non ci sono utenti in questa fascia";
             }
       
-      //console.log(usersListThree.lenght);
+      
   }
   
-/*
-  const images = ["https://media.istockphoto.com/photos/young-asian-business-woman-receiving-salary-or-bonus-money-from-boss-picture-id1092112282",
-                  "https://media.istockphoto.com/photos/red-pin-push-on-day-30-of-end-month-on-white-calendar-mark-this-day-picture-id806269928",];
-
-
-                  
-                  
-                  const sliderImages = document.querySelector(".slider");
-                  
-                  let imagesIndex = 0;
-                  let changeImages = setInterval(() => {
-                    sliderImages.style.backgroundImage = `url(${images[imagesIndex]})`;
-                  
-                    if( imagesIndex < images.length -1  ) {
-                      imagesIndex++;
-                    } else {
-                      imagesIndex = 0;
-                    }
-                  }, 2000);
-
-
-  */
+  ///////////////////////// SLIDER //////////////////////
 
                   const imgs = [ "https://media.istockphoto.com/photos/young-asian-business-woman-receiving-salary-or-bonus-money-from-boss-picture-id1092112282",
                                   "https://media.istockphoto.com/photos/red-pin-push-on-day-30-of-end-month-on-white-calendar-mark-this-day-picture-id806269928",
@@ -149,6 +128,41 @@ function createAge(parent, ageUser){
                     }
                   }, 3000);
  
+//////////// MODALI ARTICOLI
+
+const modalOne = document.querySelector("#modal_one");
+const closeModal = document.querySelector("#modal_button_one");
+const openModal = document.querySelector("#open_modal_one");
+const modalTwo = document.querySelector("#modal_two");
+const openModalTwo = document.querySelector("#open_modal_two");
+const closeModalTwo = document.querySelector("#modal_button_two");
+const modalThree = document.querySelector("#modal_three");
+const openModalThree = document.querySelector("#open_modal_three");
+const closeModalThree = document.querySelector("#modal_button_three");
+
+openModal.addEventListener("click", () => {
+    modalOne.classList = ("modal_visible");
+})
+closeModal.addEventListener("click", () => {
+    modalOne.classList = ("modal_hidden");
+})
+
+
+openModalTwo.addEventListener("click", () => {
+    modalTwo.classList = ("modal_visible");
+})
+closeModalTwo.addEventListener("click", () => {
+    modalTwo.classList = ("modal_hidden");
+})
+
+
+openModalThree.addEventListener("click", () => {
+    modalThree.classList = ("modal_visible");
+})
+closeModalThree.addEventListener("click", () => {
+    modalThree.classList = ("modal_hidden");
+})
+
 
 
 
