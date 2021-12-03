@@ -1,4 +1,4 @@
-let ages = ["18", "29", "30", "23", "50", "68", "80", "27", "44", "32" ];
+let ages = ["18", "29", "30", "65", "40", "20", "80", "27", "44", "32" ];
 let usersRanges = [];
 let usersList = [];
 
@@ -9,7 +9,7 @@ const getUsersList = async() => {
         element.age = ages[index]
         return element 
     });
-    console.log(usersList);
+    //console.log(usersList);
     const usersListOne = usersList.filter((element) => 
     element.age >= 18 && element.age <= 35);
 
@@ -18,7 +18,7 @@ const getUsersList = async() => {
 
     const usersListThree = usersList.filter((element) => 
     element.age > 64 );
-
+    
     renderUsersOne(usersListOne);
     renderUsersTwo(usersListTwo);
     renderUsersThree(usersListThree);
@@ -46,20 +46,20 @@ function createUser(parent, nameUser, phoneUser, ageUser,){
 }
 
 function createName(parent, nameUser){
-    const name = document.createElement("h3")
-    name.textContent = nameUser;
+    const name = document.createElement("h4")
+    name.textContent = " Name:" + " " + nameUser;
     parent.appendChild(name);
 }
 
 function createPhone(parent, phoneUser){
     const phone = document.createElement("p")
-    phone.textContent = phoneUser;
+    phone.textContent = "Phone:" + " " + phoneUser;
     parent.appendChild(phone)
 }
 
 function createAge(parent, ageUser){
     const age = document.createElement("span")
-    age.textContent = ageUser;
+    age.textContent = "Age:" + " " +ageUser;
     parent.appendChild(age)
 }
 
@@ -80,7 +80,7 @@ function createAge(parent, ageUser){
     
     usersListTwo.map((element) => {
           createUser(
-              wrapperUsersTwo,  //deve cambiare
+              wrapperUsersTwo,  
               element.name,
               element.phone,
               element.age 
@@ -89,20 +89,65 @@ function createAge(parent, ageUser){
   }
 
   function renderUsersThree(usersListThree) {
-    
-    usersListThree.map((element) => {
-          createUser(
-              wrapperUsersThree,  
-              element.name,
-              element.phone,
-              element.age 
-          );
-      });
+    console.log(usersListThree.length > 0, "maggiore di 0"); 
+        if(usersListThree.length > 0){
+            usersListThree.map((element) => {
+                
+            createUser(
+                wrapperUsersThree,  
+                element.name,
+                element.phone,
+                element.age 
+            )
+        });
+            } else {
+                console.log(usersListThree, "secondo");
+                wrapperUsersThree.innerHTML = "Non ci sono utenti in questa fascia";
+            }
+      
+      //console.log(usersListThree.lenght);
   }
   
+/*
+  const images = ["https://media.istockphoto.com/photos/young-asian-business-woman-receiving-salary-or-bonus-money-from-boss-picture-id1092112282",
+                  "https://media.istockphoto.com/photos/red-pin-push-on-day-30-of-end-month-on-white-calendar-mark-this-day-picture-id806269928",];
 
 
-  
+                  
+                  
+                  const sliderImages = document.querySelector(".slider");
+                  
+                  let imagesIndex = 0;
+                  let changeImages = setInterval(() => {
+                    sliderImages.style.backgroundImage = `url(${images[imagesIndex]})`;
+                  
+                    if( imagesIndex < images.length -1  ) {
+                      imagesIndex++;
+                    } else {
+                      imagesIndex = 0;
+                    }
+                  }, 2000);
+
+
+  */
+
+                  const imgs = [ "https://media.istockphoto.com/photos/young-asian-business-woman-receiving-salary-or-bonus-money-from-boss-picture-id1092112282",
+                                  "https://media.istockphoto.com/photos/red-pin-push-on-day-30-of-end-month-on-white-calendar-mark-this-day-picture-id806269928",
+                                  "https://media.istockphoto.com/photos/happy-millennial-woman-reading-paper-correspondence-letter-picture-id1290230615"];
+                  
+                  const slider = document.querySelector(".slider_img");
+
+                  let imagesIndex = 0;
+                  
+                  let changeImg = setInterval(() => {
+                    slider.style.backgroundImage = `url(${imgs[imagesIndex]})`;
+                  
+                    if (imagesIndex < imgs.length - 1) {
+                      imagesIndex++;
+                    } else {
+                      imagesIndex = 0;
+                    }
+                  }, 3000);
  
 
 
